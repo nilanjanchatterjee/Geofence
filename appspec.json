@@ -1,21 +1,28 @@
 {
   "settings": [
     {
-      "id": "year",
-      "name": "The year.",
-      "description": "Insert description for the year setting setting",
-      "defaultValue": 2022,
-      "type": "INTEGER"
+      "id": "polygon",
+      "name": "polygon files",
+      "description": "You can upload local files for running the resource selection function analysis. Make sure that they overlap with the tracking data set and are in WGS 84 projection! The App requires the following files, named exactly as given: 1. `polygon_boundary.cpg`, 2. `polygon_boundary.dbf`, 3. `polygon_boundary.prj`, 4. `polygon_boundary.shp`, 5. `polygon_boundary.shx`. Note that fallback protected area polygon file of Y2Y region is provided",
+      "type": "LOCAL_FILE"
+    } 
+    ],
+     "providedAppFiles": [
+    {
+      "settingId": "polygon",
+      "from": "provided-app-files/polygon/"
     }
   ],
   "dependencies": {
     "R": [
       {
-        "name": "lubridate",
-        "version": "1.7.10"
+        "name": "sf"
       },
       {
-        "name": "move"
+        "name": "ggplot2"
+      },
+      {
+        "name": "move"        
       }
     ]
   },
@@ -25,39 +32,30 @@
   },
   "language": "eng",
   "keywords": [
-    "example",
-    "template"
+    "filtering",
+    "protected-area",
+    "movement modelling",
+    "animal movement"
   ],
   "people": [
     {
-      "firstName": "Charles",
+      "firstName": "Nilanjan",
       "middleInitials": null,
-      "lastName": "Darwin",
-      "email": "creator@example.com",
-      "roles": [
-        "author",
-        "creator"
-      ],
-      "orcid": null,
-      "affiliation": null,
-      "affiliationRor": null
+      "lastName": "Chatterjee",
+      "email": "nchatter@umn.edu",
+      "roles": ["author", "creator"],
+      "orcid": "0000-0002-7932-0191",
+      "affiliation": "University of Minnesota",
+      "affiliationRor": ""
     }
+		
   ],
   "funding": [
     {
-      "name": "funder name",
-      "comment": "grant for App"
-    }
+	"name": "NASA MoveApps Project"
+	}
   ],
-  "references": [
-    {
-      "type": "IsDescribedBy",
-      "note": "Darwin, C. 1900. The creation. Journal XY. 1-2",
-      "url": "https://anylink.xyz"
-    }
-  ],
-  "documentation": {
-    "url": "https://github.com/yourAccount/my-app/README.md"
+  "documentation" : {
+    "url": "https://github.com/nilanjanchatterjee/Geofence/blob/master/README.md"
   }
 }
-
