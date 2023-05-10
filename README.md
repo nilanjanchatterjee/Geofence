@@ -26,9 +26,6 @@ Move/MoveStack in Movebank format
 ### Settings 
 The app requires a polygon boundary in shapefile format. A fall back file of protected area in the Y2Y area is provided and users can upload their own polygon shapefile.
 
-### Most common errors
-*Please describe shortly what most common errors of the App can be, how they occur and best ways of solving them.*
-
 ### Null or error handling
 
 If no point has overlap with the protected area an **logger** message is given in the app-log. Please check the app-log if you do not see an output artefact plot. 
