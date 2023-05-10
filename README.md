@@ -12,7 +12,7 @@ The app segregates animal locations within or outside any specific polygon bound
 
 ### Input data
 
-MoveStack in Movebank format
+MoveStack in Movebank format   
 Polygon boundary file in shapefile format
 
 ### Output data
