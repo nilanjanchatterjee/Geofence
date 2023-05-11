@@ -23,6 +23,9 @@
       },
       {
         "name": "move"        
+      },
+      {
+        "name": "tidyverse"
       }
     ]
   },
