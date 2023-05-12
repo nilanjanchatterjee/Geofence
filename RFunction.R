@@ -19,7 +19,7 @@ rFunction = function(data, polygon = NULL) {
     summarise(do_union = FALSE) %>%
     st_cast("LINESTRING")
   
-  bndry_crop <-st_crop(bndry, data_sf) ## crop the area boundaries wrt the dataset
+  bndry_crop <-st_crop(polygon_boundary, data_sf) ## crop the area boundaries wrt the dataset
   ###check if there are no protected area
   
   if (nrow(bndry_crop)==0) 
